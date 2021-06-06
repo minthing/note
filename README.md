@@ -12,3 +12,7 @@
 * `main.js` : 가장 먼저 실행되는 자바스크립트 파일, Vue 인스턴스를 생성하는 역할을 한다.
 * `createApp(App).mount('#app')` : index.html의 id="app"인 곳에 연결(mount)시켜라
 * 우리에게 보이는 파일은 `app.vue`임 -> 그 안에 `import HelloWorld from './components/HelloWorld.vue'` 되어있다.
+* babel : 하위 버전에서도 돌아가도록 해줌
+* router : vue-roter를 위한 기능
+* vuex : 상태관리
+* Css pre-processor : sass 같은 거
