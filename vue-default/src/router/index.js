@@ -19,6 +19,9 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
+    // 불러오는 파일이 app.js가 아니라 새 파일로 받아옴
+    // 일단 캐시에 올라감 (prefetch)
+    // 만약 다른 페이지에는 prefetch true로 주고 싶다면 component: () => import(/* webpackChunkName: "about", weppackPrefetch:true */ '../views/About.vue')
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   }
 ]
