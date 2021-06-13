@@ -28,6 +28,11 @@ const routes = [
     path: '/basic',
     name: 'Basic',
     component: () => import('../views/Basic.vue')
+  },
+  {
+    path: '/databinding',
+    name: 'DataBinding',
+    component: () => import('../views/DataBinding.vue')
   }
 ]
 
