@@ -33,6 +33,11 @@ const routes = [
     path: '/databinding',
     name: 'DataBinding',
     component: () => import('../views/DataBinding.vue')
+  },
+  {
+    path: '/inputtext',
+    name: 'InputText',
+    component: () => import('../views/InputText.vue')
   }
 ]
 
