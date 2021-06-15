@@ -16,3 +16,31 @@
 * router : vue-roter를 위한 기능
 * vuex : 상태관리
 * Css pre-processor : sass 같은 거
+
+##### 210616(수)
+* 공식문서 참조 : https://kr.vuejs.org/v2/guide/forms.html#%EA%B0%92-%EB%B0%94%EC%9D%B8%EB%94%A9%ED%95%98%EA%B8%B0
+* 라디오, 체크박스 및 셀렉트 옵션의 경우, v-model 바인딩 값은 보통 정적인 문자열(또는 체크 박스의 boolean).
+* 값을 vue 인스턴스 속성에 매칭하고 싶으면 `v-bind`를 사용. 셀렉트 박스와 체크박스를 value 값과 바인딩 하기 위해선 `v-bind:value`를 사용해야 함.
+* 한국어는 `v-model`대신 Input 이벤트 사용해야 함.
+```html
+<select v-model="selected">
+  <option v-for="option in options" v-bind:value="option.value">
+    {{ option.text }}
+  </option>
+</select>
+<span>Selected: {{ selected }}</span>
+```
+```javascript
+new Vue({
+  el: '...',
+  data: {
+    selected: 'A',
+    options: [
+      { text: 'One', value: 'A' },
+      { text: 'Two', value: 'B' },
+      { text: 'Three', value: 'C' }
+    ]
+  }
+})
+
+```
