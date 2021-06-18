@@ -38,6 +38,11 @@ const routes = [
     path: '/inputtext',
     name: 'InputText',
     component: () => import('../views/InputText.vue')
+  },
+  {
+    path: '/attribute',
+    name: 'Attribute',
+    component: () => import('../views/Attribute.vue')
   }
 ]
 
