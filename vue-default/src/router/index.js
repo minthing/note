@@ -43,6 +43,16 @@ const routes = [
     path: '/attribute',
     name: 'Attribute',
     component: () => import('../views/Attribute.vue')
+  },
+  {
+    path: '/list',
+    name: 'List',
+    component: () => import('../views/List.vue')
+  },
+  {
+    path: '/table',
+    name: 'Table',
+    component: () => import('../views/Table.vue')
   }
 ]
 
