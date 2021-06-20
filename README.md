@@ -49,3 +49,8 @@ new Vue({
 * `v-bind:key` :  Vue에서 개별 DOM 노드들을 추적하고 기존 엘리먼트를 재사용, 재정렬하기 위해서 v-for의 각 항목들에 고유한 key 속성을 제공해야 합니다.
 * 인스턴스 속성에 반드시 `v-bind` 붙는거 기억하기..!
 * nuxt 할 때는 왜 `:key`였냐 -> 거기서 주는 값 사용해서 (https://nuxtjs.org/blog/going-dark-with-nuxtjs-color-mode#creating-a-color-mode-switcher)
+
+##### 210620(일)
+* 참고 : https://kr.vuejs.org/v2/guide/conditional.html
+* `v-if`의 경우 조건을 만족하는 순간 html 블록을 생성함(아예 안 그려짐)
+* `v-show`는 일단 랜더링 되고 DOM에 남아있음. (`display:none` 처리한거임)

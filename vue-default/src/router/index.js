@@ -53,6 +53,11 @@ const routes = [
     path: '/table',
     name: 'Table',
     component: () => import('../views/Table.vue')
+  },
+  {
+    path: '/rander',
+    name: 'Rander',
+    component: () => import('../views/Rander.vue')
   }
 ]
 
