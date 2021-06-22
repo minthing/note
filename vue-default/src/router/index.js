@@ -58,6 +58,11 @@ const routes = [
     path: '/rander',
     name: 'Rander',
     component: () => import('../views/Rander.vue')
+  },
+  {
+    path: '/event',
+    name: 'Event',
+    component: () => import('../views/Event.vue')
   }
 ]
 
