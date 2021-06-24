@@ -1,5 +1,6 @@
 <template>
     <div>
+        <input type="text" v-model="text" @keyup.enter="show()">
         <button class="button" @click="plus(), one()">plus</button> <!--v-on:click == @click -->
         <p>the count is : {{count}}</p>
         <select v-model="city" @change="select">
@@ -27,6 +28,9 @@ export default {
         },
         select(){
             alert(this.city)
+        },
+        show(){
+            alert(this.text)
         }
     }
 }
