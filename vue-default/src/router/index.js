@@ -73,6 +73,11 @@ const routes = [
     path: '/watch',
     name: 'Watch',
     component: () => import('../views/Watch.vue')
+  },
+  {
+    path: '/new',
+    name: 'New',
+    component: () => import('../views/New.vue')
   }
 ]
 
